@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista Școlii - Pagina Principală</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>📰 Revista Școlii</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Acasă</a></li>
+                <li><a href="#articole">Articole</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Bine ați venit la Revista Școlii</h2>
+            <p>Descoperă cele mai interesante povești, știri și evenimente din viața școlii noastre</p>
+            <button class="cta-button">Citește Articolele</button>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articole" class="articles">
+        <div class="container">
+            <h2>Articole Recente</h2>
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <article class="article-card">
+                    <div class="article-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="article-content">
+                        <span class="article-category">Evenimente</span>
+                        <h3>Gala de Premiere 2026</h3>
+                        <p>Un eveniment spectaculos care a reunit elevi și profesori în celebrarea succeselor anului școlar.</p>
+                        <a href="#" class="read-more">Citește mai mult →</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card">
+                    <div class="article-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="article-content">
+                        <span class="article-category">Cultura</span>
+                        <h3>Concursul de Poezie</h3>
+                        <p>Elevii clasei a IX-a au participat la un concurs internațional de creaţie literară.</p>
+                        <a href="#" class="read-more">Citește mai mult →</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card">
+                    <div class="article-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="article-content">
+                        <span class="article-category">Sport</span>
+                        <h3>Turneul de Volei</h3>
+                        <p>Echipa noastră de volei a câștigat locul I la turneul interjudețean.</p>
+                        <a href="#" class="read-more">Citește mai mult →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galerie" class="gallery">
+        <div class="container">
+            <h2>Galerie Foto</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">📸 Gala 2026</div>
+                <div class="gallery-item">🎭 Producția Teatrală</div>
+                <div class="gallery-item">⚽ Meciuri Sportive</div>
+                <div class="gallery-item">🎨 Expoziție Artă</div>
+                <div class="gallery-item">📚 Cărți Prezentate</div>
+                <div class="gallery-item">🏫 Evenimente Școlii</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactează-ne</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informații de Contact</h3>
+                    <p><strong>Email:</strong> revista@scoala.ro</p>
+                    <p><strong>Telefon:</strong> +40 123 456 789</p>
+                    <p><strong>Adresă:</strong> Strada Școlii, nr. 1, Orașul Tău</p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Nume complet" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Mesajul tău..." rows="5" required></textarea>
+                    <button type="submit" class="cta-button">Trimite Mesaj</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Revista Școlii. Toate drepturile rezervate.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
