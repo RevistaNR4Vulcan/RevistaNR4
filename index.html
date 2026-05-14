@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revista Școlii - Pagina Principală</title>
+    <title>Revista Școlii - Școala Gimnazială Nr. 4 Vulcan</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <h1>📰 Revista Școlii</h1>
+                <h1>📰 Revista NR4Vulcan</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="#home" class="active">Acasă</a></li>
@@ -25,57 +24,51 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h2>Bine ați venit la Revista Școlii</h2>
-            <p>Descoperă cele mai interesante povești, știri și evenimente din viața școlii noastre</p>
-            <button class="cta-button">Citește Articolele</button>
+            <p>Descoperă cele mai interesante povești, știri și evenimente din viața Școlii Gimnaziale Nr. 4 Vulcan</p>
+            <a href="#articole" class="cta-button" style="text-decoration: none; display: inline-block;">Citește Articolele</a>
         </div>
     </section>
 
-    <!-- Articles Section -->
     <section id="articole" class="articles">
         <div class="container">
             <h2>Articole Recente</h2>
             <div class="articles-grid">
-                <!-- Article 1 -->
                 <article class="article-card">
                     <div class="article-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
                     <div class="article-content">
                         <span class="article-category">Evenimente</span>
                         <h3>Gala de Premiere 2026</h3>
                         <p>Un eveniment spectaculos care a reunit elevi și profesori în celebrarea succeselor anului școlar.</p>
-                        <a href="#" class="read-more">Citește mai mult →</a>
+                        <a href="gala-premiere.html" class="read-more">Citește mai mult →</a>
                     </div>
                 </article>
 
-                <!-- Article 2 -->
                 <article class="article-card">
                     <div class="article-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
                     <div class="article-content">
                         <span class="article-category">Cultura</span>
                         <h3>Concursul de Poezie</h3>
-                        <p>Elevii clasei a IX-a au participat la un concurs internațional de creaţie literară.</p>
-                        <a href="#" class="read-more">Citește mai mult →</a>
+                        <p>Elevii școlii noastre au participat la un concurs de creație literară, obținând rezultate remarcabile.</p>
+                        <a href="concurs-poezie.html" class="read-more">Citește mai mult →</a>
                     </div>
                 </article>
 
-                <!-- Article 3 -->
                 <article class="article-card">
                     <div class="article-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
                     <div class="article-content">
                         <span class="article-category">Sport</span>
                         <h3>Turneul de Volei</h3>
-                        <p>Echipa noastră de volei a câștigat locul I la turneul interjudețean.</p>
-                        <a href="#" class="read-more">Citește mai mult →</a>
+                        <p>Echipa noastră de volei a dat totul pe teren la ultimul turneu între școli.</p>
+                        <a href="turneu-volei.html" class="read-more">Citește mai mult →</a>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
     <section id="galerie" class="gallery">
         <div class="container">
             <h2>Galerie Foto</h2>
@@ -85,40 +78,37 @@
                 <div class="gallery-item">⚽ Meciuri Sportive</div>
                 <div class="gallery-item">🎨 Expoziție Artă</div>
                 <div class="gallery-item">📚 Cărți Prezentate</div>
-                <div class="gallery-item">🏫 Evenimente Școlii</div>
+                <div class="gallery-item">🏫 Viața în Școală</div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contactează-ne</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Informații de Contact</h3>
-                    <p><strong>Email:</strong> revista@scoala.ro</p>
-                    <p><strong>Telefon:</strong> +40 123 456 789</p>
-                    <p><strong>Adresă:</strong> Strada Școlii, nr. 1, Orașul Tău</p>
+                    <p><strong>Școala:</strong> Școala Gimnazială Nr. 4 Vulcan</p>
+                    <p><strong>Email:</strong> revista@scoala4vulcan.ro</p>
+                    <p><strong>Adresă:</strong> Vulcan, Județul Hunedoara</p>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Nume complet" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Mesajul tău..." rows="5" required></textarea>
+                <form class="contact-form" action="https://formspree.io/f/AICI_REPLACE_CU_ID_DE_LA_FORMSPREE" method="POST">
+                    <input type="text" name="nume" placeholder="Nume complet" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="mesaj" placeholder="Mesajul tău sau articolul propus..." rows="5" required></textarea>
                     <button type="submit" class="cta-button">Trimite Mesaj</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Revista Școlii. Toate drepturile rezervate.</p>
+            <p>&copy; 2026 Revista Școlii - Școala Gimnazială Nr. 4 Vulcan. Toate drepturile rezervate.</p>
             <div class="social-links">
                 <a href="#" class="social-icon">Facebook</a>
                 <a href="#" class="social-icon">Instagram</a>
-                <a href="#" class="social-icon">Twitter</a>
             </div>
         </div>
     </footer>
