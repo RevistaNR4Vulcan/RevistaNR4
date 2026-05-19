@@ -300,3 +300,16 @@ footer .social-links a {
 footer .social-links a:hover {
     color: #ffffff;
 }
+
+.editorial-team-box {
+    margin-top: 60px;
+    text-align: center;
+    border-top: 1px dashed #cbd5e1;
+    padding-top: 25px;
+    font-style: italic;
+    color: #64748b;
+    font-size: 15px;
+}
+.editorial-team-box strong {
+    color: #4f46e5;
+}
