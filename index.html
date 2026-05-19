@@ -3,46 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vocea Elevilor</title>
+    <title>Vocea Elevilor | Școala Gimnazială Nr. 4 Vulcan</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
     <nav class="navbar">
-        <div class="container">
+        <div class="container navbar-box">
             <div class="logo">
-                <h1>📰 Revista Consiliului Elevilor</h1>
+                <h1>📰 Vocea Elevilor</h1>
+                <span>Școala Gimnazială Nr. 4 Vulcan</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#home" class="active">Acasă</a></li>
-                <li><a href="#articole">Articole</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa-solid fa-house"></i> Acasă</a></li>
+                <li><a href="#editii"><i class="fa-solid fa-book-open"></i> Ediții PDF</a></li>
+                <li><a href="#articole"><i class="fa-solid fa-newspaper"></i> Articole</a></li>
+                <li><a href="#echipa"><i class="fa-solid fa-users"></i> Redacția</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <section id="home" class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h2>Vocea Elevilor</h2>
-            <p>Descoperă cele mai interesante povești, știri și evenimente din viața Școlii Gimnaziale Nr. 4 Vulcan</p>
-            <a href="#articole" class="cta-button" style="text-decoration: none; display: inline-block;">Citește Articolele</a>
+            <span class="hero-badge">Revista Consiliului Școlar al Elevilor</span>
+            <h2>Exprimă-te. Implică-te. Schimbă lumea.</h2>
+            <p>Platforma digitală unde ideile, creativitatea și vocea elevilor de la Școala Nr. 4 Vulcan prind viață. Descoperă ultimele noutăți, proiecte și realizări ale colegilor tăi.</p>
+            <div class="hero-buttons">
+                <a href="#articole" class="cta-button">Citește Articolele</a>
+                <a href="#editii" class="cta-button secondary-button">Răsfoiește Ediția PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-card">
+                <i class="fa-solid fa-feather-pointed"></i>
+                <h3>50+</h3>
+                <p>Articole Scrise</p>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-users"></i>
+                <h3>12</h3>
+                <p>Redactori Activi</p>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-bookmark"></i>
+                <h3>6</h3>
+                <p>Ediții Publicate</p>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-heart"></i>
+                <h3>300+</h3>
+                <p>Cititori Lunari</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="editii" class="editions-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Edițiile Tipărite în Format Digital</h2>
+                <p>Descarcă sau citește direct în browser numerele revistei noastre în format PDF.</p>
+            </div>
+            <div class="editions-grid">
+                <div class="edition-card">
+                    <div class="edition-badge">Nou</div>
+                    <div class="edition-cover text-cover">
+                        <i class="fa-solid fa-file-pdf"></i>
+                        <h4>Numărul 6</h4>
+                        <p>Primăvară 2026</p>
+                    </div>
+                    <div class="edition-info">
+                        <h3>Ediția de Primăvară</h3>
+                        <p>Interviuri exclusive cu profesorii școlii și rezumatul proiectelor verzi din Vulcan.</p>
+                        <a href="pdf/revista-nr6.pdf" target="_blank" class="download-btn"><i class="fa-solid fa-download"></i> Descarcă PDF</a>
+                    </div>
+                </div>
+
+                <div class="edition-card">
+                    <div class="edition-cover text-cover archive-cover">
+                        <i class="fa-solid fa-file-pdf"></i>
+                        <h4>Numărul 5</h4>
+                        <p>Iarnă 2025</p>
+                    </div>
+                    <div class="edition-info">
+                        <h3>Ediția Specială de Crăciun</h3>
+                        <p>Poezii, datini de iarnă și scrisorile elevilor către Moș Crăciun.</p>
+                        <a href="pdf/revista-nr5.pdf" target="_blank" class="download-btn"><i class="fa-solid fa-download"></i> Descarcă PDF</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="articole" class="articles">
         <div class="container">
-            <h2>Articole Recente</h2>
+            <div class="section-header">
+                <h2>Articole Recente</h2>
+                <p>Fii la curent cu tot ce se întâmplă în comunitatea noastră școlară.</p>
+            </div>
+            
             <div class="articles-grid">
-                
                 <article class="article-card">
                     <div class="article-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
                     <div class="article-content">
                         <span class="article-category">Elevi</span>
                         <h3>Consiliul Școlar al Elevilor (CSE)</h3>
                         <p>Află cine sunt reprezentanții noștri și ce activități și proiecte de top au pregătit pentru acest an școlar.</p>
-                        <a href="cse.html" class="read-more">Citește mai mult →</a>
+                        <a href="cse.html" class="read-more">Citește mai mult <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
 
@@ -52,7 +127,7 @@
                         <span class="article-category">Proiecte</span>
                         <h3>Cutia Complimentelor</h3>
                         <p>O inițiativă plină de bunătate! Descoperă cum o simplă cutie a adus zâmbete pe fețele colegilor și profesorilor.</p>
-                        <a href="cutia-complimentelor.html" class="read-more">Citește mai mult →</a>
+                        <a href="cutia-complimentelor.html" class="read-more">Citește mai mult <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
 
@@ -62,17 +137,17 @@
                         <span class="article-category">Educație</span>
                         <h3>Concursul de Istorie - Etapa I</h3>
                         <p>Elevii noștri au demonstrat cunoștințe istorice deosebite și au călătorit în timp prin poveștile trecutului.</p>
-                        <a href="concurs-istorie-1.html" class="read-more">Citește mai mult →</a>
+                        <a href="concurs-istorie-1.html" class="read-more">Citește mai mult <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
 
                 <article class="article-card">
                     <div class="article-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
                     <div class="article-content">
-                        <span class="article-category">Hobby & Distracție</span>
+                        <span class="article-category">Hobby</span>
                         <h3>Marele Concurs de Kendama</h3>
-                        <p>Trcuri spectaculoase, concentrare maximă și o atmosferă incendiară la competiția de kendama a școlii.</p>
-                        <a href="concurs-kendama.html" class="read-more">Citește mai mult →</a>
+                        <p>Trick-uri spectaculoase, concentrare maximă și o atmosferă incendiară la competiția de kendama a școlii.</p>
+                        <a href="concurs-kendama.html" class="read-more">Citește mai mult <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
 
@@ -82,7 +157,7 @@
                         <span class="article-category">Sport</span>
                         <h3>Cupa Școlii - Concurs Sportiv</h3>
                         <p>Echipele noastre au dat totul pe teren! Fair-play, energie și medalii câștigate cu mult efort.</p>
-                        <a href="concurs-sportiv.html" class="read-more">Citește mai mult →</a>
+                        <a href="concurs-sportiv.html" class="read-more">Citește mai mult <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
 
@@ -92,61 +167,112 @@
                         <span class="article-category">Voluntariat</span>
                         <h3>Acțiunea de Ecologizare</h3>
                         <p>O școală mai verde, un viitor mai curat! Elevii claselor noastre au ieșit la ecologizat zona din jurul școlii.</p>
-                        <a href="ecologizare.html" class="read-more">Citește mai mult →</a>
+                        <a href="ecologizare.html" class="read-more">Citește mai mult <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
+            </div>
+        </div>
+    </section>
 
-                <article class="article-card">
-                    <div class="article-image" style="background: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);"></div>
-                    <div class="article-content">
-                        <span class="article-category">Sănătate</span>
-                        <h3>Sanitarii Pricepuți</h3>
-                        <p>Lecții importante de prim ajutor. Colegii noștri au învățat cum să salveze vieți și să fie responsabili.</p>
-                        <a href="sanitarii.html" class="read-more">Citește mai mult →</a>
-                    </div>
-                </article>
+    <section class="quote-section">
+        <div class="container">
+            <blockquote>
+                <p>"Presa este artileria libertății." Revista noastră oferă fiecărui elev șansa de a deveni reporterul propriei sale generații.</p>
+                <cite>— Echipa Redacțională</cite>
+            </blockquote>
+        </div>
+    </section>
 
-                <article class="article-card">
-                    <div class="article-image" style="background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);"></div>
-                    <div class="article-content">
-                        <span class="article-category">Educație</span>
-                        <h3>Concursul de Istorie - Etapa II</h3>
-                        <p>Marea finală a competiției de istorie! Felicitări tuturor participanților și câștigătorilor premiilor mari.</p>
-                        <a href="concurs-istorie-2.html" class="read-more">Citește mai mult →</a>
-                    </div>
-                </article>
-
+    <section id="echipa" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Echipa Redacțională</h2>
+                <p>Oamenii din spatele textelor, fotografiilor și designului grafic.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>Andrei Miron</h3>
+                    <span class="member-role">Redactor-Șef (Clasa a VIII-a)</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h3>Elena Popa</h3>
+                    <span class="member-role">Reporter Principal (Clasa a VII-a)</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar"><i class="fa-solid fa-camera"></i></div>
+                    <h3>Matei Dan</h3>
+                    <span class="member-role">Fotograf / Tehnoredactor (Clasa a VIII-a)</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h3>Prof. Coordonator</h3>
+                    <span class="member-role">Consilier Educativ</span>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contactează-ne</h2>
+            <div class="section-header">
+                <h2>Contactează-ne & Propune un Articol</h2>
+                <p>Ai un talent ascuns, o știre interesantă sau vrei să ni te alături? Scrie-ne direct!</p>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Informații de Contact</h3>
-                    <p><strong>Școala:</strong> Școala Gimnazială Nr. 4 Vulcan</p>
-                    <p><strong>Email:</strong> revista@scoala4vulcan.ro</p>
-                    <p><strong>Adresă:</strong> Vulcan, Județul Hunedoara</p>
+                    <p><i class="fa-solid fa-school"></i> <strong>Școala:</strong> Școala Gimnazială Nr. 4 Vulcan</p>
+                    <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> revista@scoala4vulcan.ro</p>
+                    <p><i class="fa-solid fa-location-dot"></i> <strong>Adresă:</strong> Vulcan, Județul Hunedoara</p>
+                    
+                    <div class="info-notice">
+                        <p><strong>💡 Notă trimitere:</strong> Când apeși pe butonul de trimitere, calculatorul sau telefonul tău va deschide automat aplicația ta de email (Gmail/Outlook/Mail) gata configurată cu mesajul tău!</p>
+                    </div>
                 </div>
+
                 <form class="contact-form" action="mailto:revista@scoala4vulcan.ro" method="POST" enctype="text/plain">
-                    <input type="text" name="nume" placeholder="Nume complet" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <textarea name="mesaj" placeholder="Mesajul tău sau articolul propus..." rows="5" required></textarea>
-                    <button type="submit" class="cta-button">Trimite Mesaj</button>
+                    <label for="nume">Numele tău complet:</label>
+                    <input type="text" id="nume" name="Nume" placeholder="Ex: Popescu Ionuț" required>
+                    
+                    <label for="clasa">Clasa din care faci parte:</label>
+                    <input type="text" id="clasa" name="Clasa" placeholder="Ex: Clasa a VII-a B" required>
+
+                    <label for="mesaj">Mesajul tău sau propunerea de articol:</label>
+                    <textarea id="mesaj" name="Mesaj" placeholder="Scrie aici textul tău, opinia ta sau propunerea de articol..." rows="6" required></textarea>
+                    
+                    <button type="submit" class="cta-button"><i class="fa-solid fa-paper-plane"></i> Trimite prin E-mail direct</button>
                 </form>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Revista Școlii - Școala Gimnazială Nr. 4 Vulcan. Toate drepturile rezervate.</p>
-            <div class="social-links">
-                <a href="#" class="social-icon">Facebook</a>
-                <a href="#" class="social-icon">Instagram</a>
+        <div class="container footer-content">
+            <div class="footer-about">
+                <h3>Vocea Elevilor</h3>
+                <p>Revistă școlară digitală editată de Consiliul Școlar al Elevilor de la Școala Gimnazială Nr. 4 Vulcan.</p>
             </div>
+            <div class="footer-links">
+                <h4>Navigare Rapidă</h4>
+                <ul>
+                    <li><a href="#home">Acasă</a></li>
+                    <li><a href="#editii">Ediții PDF</a></li>
+                    <li><a href="#articole">Articole</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <h4>Urmărește Activitatea Noastră</h4>
+                <div class="social-box">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Revista Școlii - Școala Gimnazială Nr. 4 Vulcan. Toate drepturile rezervate.</p>
         </div>
     </footer>
 
