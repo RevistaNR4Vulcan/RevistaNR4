@@ -1,5 +1,5 @@
 /* ==========================================================================
-   1. RESET & DESIGN GENERAL (Stil modern, tematică Portocaliu Premium)
+   1. DESIGN GENERAL 
    ========================================================================== */
 * {
     margin: 0;
@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #fefaf6; /* Un fundal alb-crem foarte fin, cald, care se potrivește cu portocaliul */
+    background-color: #fefaf6; /* alb-crem*/
     color: #1e293b;
     line-height: 1.6;
 }
@@ -21,12 +21,12 @@ body {
 }
 
 /* ==========================================================================
-   2. NAVBAR (Bara de sus - minimalistă și aerisită)
+   2. NAVBAR
    ========================================================================== */
 .navbar {
     background-color: #ffffff;
-    box-shadow: 0 4px 6px -1px rgba(249, 115, 22, 0.05); /* Umbră fină cu tentă portocalie */
-    position: sticky;
+    box-shadow: 0 4px 6px -1px rgba(249, 115, 22, 0.05); /* Umbră */
+    position: stiky;
     top: 0;
     z-index: 100;
     padding: 15px 0;
@@ -41,7 +41,7 @@ body {
 .logo h1 {
     font-family: 'Playfair Display', serif;
     font-size: 24px;
-    color: #ea580c; /* Portocaliu intens, perfect pentru text/logo */
+    color: #ea580c; /* Portocaliu intens */
 }
 
 .nav-links {
@@ -63,7 +63,7 @@ body {
 }
 
 /* ==========================================================================
-   3. HERO BANNER (Gradient vibrant portocaliu)
+   3. HERO BANNER
    ========================================================================== */
 .hero {
     background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); /* Gradient cald, de la portocaliu aprins la portocaliu închis */
@@ -106,7 +106,7 @@ body {
 }
 
 /* ==========================================================================
-   4. GRILA DE ARTICOLE (Aspect modern de revistă)
+   4. GRILA DE ARTICOLE 
    ========================================================================== */
 .articles {
     padding: 40px 0;
@@ -131,7 +131,7 @@ body {
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-    border: 1px solid #ffedd5; /* Chenar fin portocaliu deschis */
+    border: 1px solid #ffedd5; /* Chenar portocaliu deschis */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -289,10 +289,10 @@ body {
 }
 
 /* ==========================================================================
-   6. FOOTER (Contrast puternic cu fundal închis)
+   6. FOOTER
    ========================================================================== */
 footer {
-    background-color: #1e1b4b; /* Un bleumarin extrem de închis care face un contrast superb cu portocaliul */
+    background-color: #1e1b4b; /* Un bleumarin extrem de închis*/
     color: #cbd5e1;
     padding: 40px 0;
     text-align: center;
