@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSE - Vocea Elevilor</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="./styles.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
-        /* Ajustare fundal pagină pentru a se potrivi cu nuanța caldă din styles.css */
+        /* Fundalul paginii adaptat la nuanța caldă din index */
         .article-page { 
             padding: 40px 0 60px 0; 
             background-color: #fefaf6; 
             min-height: 85vh; 
         }
         
-        /* Wrapper-ul articolului adaptat la tema Portocaliu Premium */
+        /* Caseta albă a articolului adaptată la tema Portocaliu Premium */
         .article-wrapper { 
             max-width: 800px; 
             margin: 0 auto; 
@@ -29,11 +30,11 @@
             border: 1px solid #ffedd5;
         }
         
-        /* Meta etichetă adaptată la culorile tale */
+        /* Eticheta de categorie portocalie */
         .article-meta { 
             display: inline-block;
-            background-color: #ffedd5; /* Fundal etichetă portocaliu deschis */
-            color: #ea580c; /* Text portocaliu închis */
+            background-color: #ffedd5; 
+            color: #ea580c; 
             padding: 4px 12px;
             border-radius: 50px;
             font-size: 11px;
@@ -50,7 +51,7 @@
             color: #0f172a; 
         }
         
-        /* Container special pentru Canva (păstrat intact pentru proporții, adăugat shadow discret) */
+        /* Containerul pentru prezentarea Canva */
         .canva-embed-container {
             position: relative; 
             width: 100%; 
@@ -87,7 +88,7 @@
             color: #ea580c;
         }
 
-        /* Butonul Înapoi adaptat la stilul butoanelor/link-urilor tale */
+        /* Link-ul de întoarcere în stilul temei site-ului */
         .back-btn { 
             display: inline-flex; 
             margin-top: 20px; 
@@ -101,8 +102,8 @@
             text-decoration: none;
         }
 
-        /* Fix pentru a asigura alinierea elementelor pe mobil */
-        @media (max-width: 600px) {
+        /* Optimizare mobil */
+        @media (max-width: 768px) {
             .article-wrapper { padding: 20px; border-radius: 8px; }
             .article-title { font-size: 1.8rem; }
         }
